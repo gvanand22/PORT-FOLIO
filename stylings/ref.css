@@ -1,0 +1,86 @@
+/* .navi-bar-tab ul{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+} */
+
+/* test */
+.navi-grd-tab li{
+    display: inline;
+    background-color: cornflowerblue;
+    padding: 1.5dvh 5dvw;
+}
+/* test */
+.navi-bar-tab ul li{
+    display: inline;
+    background-color: cornflowerblue;
+    padding: 1.5dvh 5dvw;
+}
+.navi-bar-tab ul li a{
+    color:#fff;
+}
+
+.navi-bar-tab ul h2.flio-sec-tab{
+    background-color: #bf80ff;
+    padding: 1.5dvh 5dvw;
+    /* justify-content: flex-start; */
+    font-weight: bold;
+    /* font-size: large; */
+}
+.navi-bar-tab ul li.dwld-sec-tab{
+    background-color: white;
+    border: cornflowerblue dashed 3px;
+}
+.navi-bar-tab ul li.dwld-sec-tab a{
+    color: cornflowerblue;
+}
+
+
+/* auto changing dark theme */
+/* 
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark-mode {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+<script>
+  function applyThemeByTime() {
+    const hour = new Date().getHours();
+
+    if (hour >= 6 && hour < 18) {
+      document.body.classList.remove("dark-mode");  // Light mode
+    } else {
+      document.body.classList.add("dark-mode");     // Dark mode
+    }
+  }
+
+  applyThemeByTime();
+</script>
+
+//changing every hour
+<script>
+  applyThemeByTime();
+  setInterval(applyThemeByTime, 60 * 60 * 1000); // every 1 hour
+</script>
+
+//user toogle
+<button onclick="toggleTheme()">Toggle Theme</button>
+
+<script>
+function toggleTheme() {
+  document.body.classList.toggle("dark-mode");
+}
+</script>
+
+*/

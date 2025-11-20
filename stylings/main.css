@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+/* header-styles */
+.head-div-tab{
+    
+    position: sticky;
+    top: 0;
+    margin: 2dvh 1dvh 0 1dvh;
+
+}
+/* navigation bar styling */
+.navi-bar-tab{
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+}
+.navi-bar-tab ul li{
+    padding: 1.5dvh 3dvw;
+}
+.navi-bar-tab ul li a{
+    color: white;
+}
+.navi-gr1-tab {
+    display: flex;
+    align-items: center;
+    background-color: #bf80ff;
+    justify-content: center;
+    flex: 1;
+}
+.navi-gr1-tab a{
+    font-size: x-large;
+    letter-spacing: .5dvw;
+}
+
+.navi-gr2-tab{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 3;
+    background-color: cornflowerblue;
+    
+}
+/* .navi-gr2-tab li{
+    background-color: cornflowerblue;
+} */
+.navi-gr2-tab li.dwld-sec-tab{
+    background-color: white;
+    border: cornflowerblue 2px dashed;
+    margin-right: .5dvh;
+}
+.navi-gr2-tab li.dwld-sec-tab a{
+    color: cornflowerblue;
+}
+
+
+/* intro content grid layout */
+.bdy1-sec-tab{
+  display: grid;
+    grid-template-columns: 75% 25%;
+    margin: 1dvh;
+}
+.bdy1-gr1-tab{
+    text-align: center;
+    background-color: grey;
+    color: white;
+    align-content: center;
+}
+.bdy1-gr2-tab{
+    align-content: center;
+    text-align: center;
+}
+.bdy1-gr2-tab img{
+    border-radius: 50%;
+}
+
+/* grid slide-in */
+.bdy1-gr1-tab{
+    opacity: 0;
+    transform: translateX(-10dvw);
+    animation: slideinl 2s 1s ease-in-out forwards;
+}
+@keyframes slideinl {
+    to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.bdy1-gr2-tab{
+    opacity:0;
+    transform: translateX(10dvw);
+    animation: slideinr 2s 1s ease-in-out forwards;
+}
+@keyframes slideinr {
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.navi-gr2-hom{
+    opacity: 0;
+    transform: translatey(-10dvh);
+    animation: dropdwn 0.25s ease-in forwards;
+}
+@keyframes dropdwn {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.navi-gr2-prj{
+    opacity: 0;
+    transform: translatey(-10dvh);
+    animation: dropdwn 0.5s ease-in forwards;
+}
+@keyframes dropdwn {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.navi-gr2-skl{
+    opacity: 0;
+    transform: translatey(-10dvh);
+    animation: dropdwn 0.75s ease-in forwards;
+}
+@keyframes dropdwn {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.navi-gr2-con{
+    opacity: 0;
+    transform: translatey(-10dvh);
+    animation: dropdwn 1s ease-in forwards;
+}
+@keyframes dropdwn {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
